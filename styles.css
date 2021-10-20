@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-size: 16px;
+}
+.myButton {
+  border-radius: 28px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  width: 100%;
+  max-width: 214px;
+  text-align: center;
+  padding: 12px 36px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ff8a23;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+
+  height: 10%;
+  justify-content: space-around;
+  align-items: center;
+}
+.WebUiExpertTitle {
+  font-size: 2rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font-size: 0.8rem;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+}
+a {
+  text-decoration: none;
+}
+
+.heroLowerPart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 10%;
+  margin-left: 20%;
+}
+.sometext {
+  text-align: left;
+  justify-self: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1.9rem;
+  color: #534d4d;
+}
+h5 {
+  white-space: nowrap;
+  font-size: 1rem;
+  padding: 10px;
+}
+.imgContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.pairProgrammingImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  justify-self: center;
+}
+.waveMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  gap: 10px;
+  background-color: #3d37f1;
+  border: 1px solid #3d37f1;
+  max-width: 190px;
+  font-size: 1rem;
+  padding: 8px 6px;
+  margin-top: 4rem;
+}
+.logIn_button {
+  background-color: #ff8923;
+  border: 1px solid #ff8923;
+}
+
+/* Service section start */
+.service {
+  background-color: #f8f8f8;
+}
+.serviceHeaderText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 20%;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  gap: 1rem;
+}
+.serviceHeaderTextTitle {
+  color: #3d37f1;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.serviceHeaderText h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: #5a5454;
+}
+.serviceHeaderText p {
+  font-family: "Roboto", sans-serif;
+  color: #747474;
+}
+.serviceCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 55%;
+  margin: auto;
+  row-gap: 3rem;
+  column-gap: 0.5rem;
+}
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fbba77;
+  max-width: 250px;
+  max-height: 350px;
+  gap: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.serviceCard h4 {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+}
+.serviceCard p {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+.paintServiceCard {
+  background: rgb(66, 234, 212);
+  background: linear-gradient(
+    180deg,
+    rgba(66, 234, 212, 1) 7%,
+    rgba(65, 199, 234, 1) 100%
+  );
+}
+.dataServiceCard {
+  background: rgb(251, 216, 119);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 216, 119, 1) 0%,
+    rgba(251, 186, 119, 1) 100%
+  );
+}
+.phoneServiceCard {
+  background: rgb(105, 82, 159);
+  background: linear-gradient(
+    180deg,
+    rgba(105, 82, 159, 1) 0%,
+    rgba(126, 82, 159, 1) 100%
+  );
+}
+.appServiceCard {
+  background: rgb(67, 134, 210);
+  background: linear-gradient(
+    180deg,
+    rgba(67, 134, 210, 1) 0%,
+    rgba(67, 82, 210, 1) 100%
+  );
+}
+.domainServiceCard {
+  background: rgb(165, 162, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(165, 162, 246, 1) 0%,
+    rgba(173, 162, 246, 1) 100%
+  );
+}
+.repairServiceCard {
+  background: rgb(255, 128, 136);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 128, 136, 1) 0%,
+    rgba(255, 128, 182, 1) 100%
+  );
+}
+.serviceCard img {
+  max-width: 80px;
+}
+.serviceCardReadMore {
+  border: 1px solid white;
+  max-width: 150px;
+  font-size: 0.8rem;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+  }
+  .WebUiExpertTitle {
+    display: none;
+  }
+  .sometext {
+    text-align: center;
+  }
+  h5 {
+    white-space: normal;
+    font-size: 1rem;
+  }
+  .heroLowerPart {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 25rem;
+    row-gap: 1rem;
+    margin: 10%;
+  }
+  .waveMe {
+    margin: auto;
+  }
+  .serviceCards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-height: 643px) {
+  .hero {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav ul {
+    display: none;
+  }
+}
