@@ -80,7 +80,7 @@ h5 {
 .pairProgrammingImg {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+
   justify-self: center;
 }
 .waveMe {
@@ -142,6 +142,7 @@ h5 {
   margin: auto;
   row-gap: 3rem;
   column-gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 .serviceCard {
   display: flex;
@@ -158,6 +159,7 @@ h5 {
   gap: 2rem;
   padding: 1rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0.25rem;
 }
 
 .serviceCard h4 {
@@ -226,6 +228,39 @@ h5 {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
+/* services end */
+
+/* product promotions start */
+
+.productPromotion {
+  background-color: #ffffff;
+}
+.promotionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 6rem;
+}
+.productPromotion img {
+  max-width: 100%;
+  height: auto;
+}
+
+.promotionText {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 2rem;
+}
+.promotionText h4 {
+  color: #5a5454;
+  font-family: "Lato", sans-serif;
+}
+.promotionText p {
+  color: #747474;
+  font-family: "Roboto", sans-serif;
+}
 @media screen and (max-width: 1000px) {
   html {
     font-size: 12px;
@@ -264,5 +299,8 @@ h5 {
 @media screen and (max-width: 500px) {
   nav ul {
     display: none;
+  }
+  .promotionContainer {
+    flex-direction: column;
   }
 }
