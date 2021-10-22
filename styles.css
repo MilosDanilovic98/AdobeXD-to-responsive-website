@@ -8,6 +8,15 @@
 html {
   font-size: 16px;
 }
+.latoTitle {
+  font-family: "Lato", sans-serif;
+  color: #5a5454;
+}
+
+.robotoText {
+  font-family: "Roboto", sans-serif;
+  color: #747474;
+}
 .myButton {
   border-radius: 28px;
   cursor: pointer;
@@ -153,17 +162,14 @@ h5 {
 .serviceCard {
   display: flex;
   flex-direction: column;
-  height: 370px;
-  justify-self: center;
-  align-self: center;
+
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: #fbba77;
-  max-width: 250px;
-  max-height: 350px;
-  gap: 2rem;
-  padding: 1rem;
+
+  gap: 1rem;
+  padding: 2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 0.25rem;
 }
@@ -225,8 +231,8 @@ h5 {
   );
 }
 .serviceCard img {
-  max-width: 100%;
-  height: auto;
+  height: 8rem;
+  width: 8rem;
 }
 .serviceCardReadMore {
   border: 1px solid white;
@@ -586,7 +592,145 @@ h5 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* KeyFeature end */
+
+/* our workflow start */
+
+.ourWorkflowContainer {
+  display: flex;
+  padding: 5rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.ourWorkflowContainer img {
+  width: 100%;
   height: auto;
+}
+.ourWorkflowContainerRight {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.ourWorkflowContainerRightTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.ourWorkflowContainerRightGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ourWorkflowContainerRightGridElement {
+  display: flex;
+  gap: 2px;
+  flex: 0 0 50%;
+}
+
+.ourWorkflowBall {
+  background-color: #ff992e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.ourWorkflowBallText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 0 0 50%;
+}
+
+/* workflow end */
+
+/* blog start */
+
+.ourBlogContainer {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ourBlogText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourBlogCards {
+  display: flex;
+  padding: 4rem;
+  gap: 2rem;
+}
+.ourBlogCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+
+  justify-content: space-between;
+}
+.blogCardText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.ourBlogCard img {
+  align-self: start;
+}
+
+.ourBlogImgContainer img {
+  width: 100%;
+  height: auto;
+}
+.ourBlogImgContainer {
+  background-color: white;
+}
+
+.ourBlogCompanies {
+  display: flex;
+  gap: 2rem;
+}
+.blogCompaniesImgContainer img {
+  width: 100%;
+  height: auto;
+}
+
+/* Blog end */
+
+/* Footer start */
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 2rem;
+}
+
+.footerElement {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -594,6 +738,13 @@ h5 {
     font-size: 12px;
   }
 
+  .ourBlogCards {
+    flex-direction: column;
+  }
+  .ourWorkflowContainer {
+    flex-direction: column;
+    padding: 1rem;
+  }
   .keyFeatureContainer {
     flex-direction: column;
   }
