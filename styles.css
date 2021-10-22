@@ -131,19 +131,35 @@ html {
 .WebUiExpertTitle {
   font-size: 2rem;
 }
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
 nav {
   display: flex;
   align-items: center;
   min-width: 0;
   font-size: 0.8rem;
 }
-nav ul {
+.navm {
   display: flex;
   list-style-type: none;
   gap: 30px;
   font-family: "Lato", sans-serif;
   font-size: 0.8rem;
+  padding: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -889,7 +905,6 @@ h5 {
   text-align: center;
   gap: 2rem;
   font-size: 1.5rem;
-  background-color: ;
 }
 
 /* ABout me end */
@@ -951,8 +966,39 @@ h5 {
 @media screen and (max-height: 643px) {
 }
 @media screen and (max-width: 500px) {
-  nav ul {
-    display: none;
+  .navm {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    font-size: 1.5rem;
+    background-color: #f8f8f8;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .navm.active {
+    left: 0;
+  }
+  .navm li a:hover {
+    animation-name: none;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   .reviewFooter {
     flex-direction: column;
