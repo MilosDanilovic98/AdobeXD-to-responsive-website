@@ -1,6 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
 
+/* animations start */
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.09);
+  }
+}
+
+@keyframes portfoliolink {
+  0% {
+    transform: scale(1);
+    border-bottom: 5px solid #3d37f1;
+    border-left: 5px solid #3d37f1;
+    border-radius: 0.2rem;
+    padding-left: 10px;
+  }
+  50% {
+    border-bottom: 5px solid #3d37f1;
+    border-radius: 0.2rem;
+    padding-left: 8px;
+  }
+  100% {
+    transform: scale(1.09);
+    border-bottom: 5px solid #3d37f1;
+    border-left: 5px solid #3d37f1;
+    border-radius: 0.5rem;
+    padding-left: 5px;
+  }
+}
+
+@keyframes logIn {
+  0% {
+    transform: scale(1.4);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes navElements {
+  0% {
+    color: blue;
+    font-size: 0.7rem;
+  }
+
+  50% {
+    color: orange;
+    font-size: 0.9rem;
+  }
+
+  100% {
+    color: blue;
+    font-size: 1rem;
+  }
+}
+
+@keyframes waveBtn {
+  0% {
+    background-color: blue;
+    border: 1px solid #3d37f1;
+    transform: scale(1);
+  }
+
+  50% {
+    background-color: #ff8923;
+    border: 1px solid #ff8923;
+    transform: scale(1.2);
+  }
+
+  100% {
+    background-color: blue;
+    transform: scale(1);
+  }
+}
+
+/* animations end */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +97,9 @@ html {
   font-family: "Lato", sans-serif;
   color: #5a5454;
 }
-
+.blueText {
+  color: #3d37f1;
+}
 .robotoText {
   font-family: "Roboto", sans-serif;
   color: #747474;
@@ -40,12 +127,7 @@ html {
   justify-content: space-around;
   align-items: center;
 }
-/* .headerImg {
-  z-index: -1;
-  position: absolute;
-  max-width: 70rem;
-  right: 0;
-} */
+
 .WebUiExpertTitle {
   font-size: 2rem;
 }
@@ -64,6 +146,12 @@ nav ul {
 }
 a {
   text-decoration: none;
+}
+
+nav ul li a:hover {
+  animation-name: navElements;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .heroLowerPart {
@@ -111,14 +199,25 @@ h5 {
   margin-top: 4rem;
 }
 
+.waveMe:hover {
+  animation-name: waveBtn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
 .logIn_button {
   background-color: #ff8923;
   border: 1px solid #ff8923;
+  animation-iteration-count: infinite;
+  animation-name: logIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 /* Service section start */
 .service {
   background-color: #f8f8f8;
+  padding-bottom: 2rem;
 }
 .serviceHeaderText {
   display: flex;
@@ -157,21 +256,23 @@ h5 {
   margin: auto;
   row-gap: 3rem;
   column-gap: 0.5rem;
-  margin-bottom: 2rem;
 }
 .serviceCard {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: #fbba77;
-
   gap: 1rem;
   padding: 2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 0.25rem;
+}
+
+.serviceCard:hover {
+  animation-name: grow;
+  animation-duration: 1s;
 }
 
 .serviceCard h4 {
@@ -311,6 +412,14 @@ h5 {
   padding: 0;
   color: #969ca2;
 }
+
+.portfolioText ul li:hover {
+  animation-name: portfoliolink;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  color: blue;
+}
+
 .portfolioGallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -368,6 +477,7 @@ h5 {
   justify-content: center;
   font-family: "Lato", sans-serif;
 }
+
 .ourSuccessGridElement p {
   color: #ffffff;
   font-size: 2rem;
@@ -628,8 +738,9 @@ h5 {
 
 .ourWorkflowContainerRightGridElement {
   display: flex;
-  gap: 2px;
+  gap: 2rem;
   flex: 0 0 50%;
+  padding: 1rem;
 }
 
 .ourWorkflowBall {
@@ -733,6 +844,24 @@ h5 {
   gap: 1rem;
 }
 
+.footerElement a {
+  text-decoration: none;
+  color: #4b647e;
+  font-family: "Roboto", sans-serif;
+}
+.footerSocialLogos {
+  display: flex;
+  gap: 1rem;
+}
+.logoContainer {
+  background-color: #0a315a;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 1000px) {
   html {
     font-size: 12px;
