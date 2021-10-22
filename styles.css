@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
 
 /* animations start */
+
 @keyframes grow {
   0% {
     transform: scale(1);
@@ -86,13 +87,7 @@
 
 /* animations end */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-html {
-  font-size: 16px;
-}
+/* Fonts start */
 .latoTitle {
   font-family: "Lato", sans-serif;
   color: #5a5454;
@@ -104,6 +99,16 @@ html {
   font-family: "Roboto", sans-serif;
   color: #747474;
 }
+/* Fonts end */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-size: 16px;
+}
+
 .myButton {
   border-radius: 28px;
   cursor: pointer;
@@ -116,13 +121,15 @@ html {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ff8a23;
 }
+
+/* Hero section start */
+
 .hero {
   padding-top: 1rem;
 }
 
 .header {
   display: flex;
-
   height: 10%;
   justify-content: space-around;
   align-items: center;
@@ -131,6 +138,8 @@ html {
 .WebUiExpertTitle {
   font-size: 2rem;
 }
+
+/* Navbar start */
 
 .hamburger {
   display: none;
@@ -170,6 +179,8 @@ nav ul li a:hover {
   animation-fill-mode: forwards;
 }
 
+/* Navbar end */
+
 .heroLowerPart {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -181,9 +192,7 @@ nav ul li a:hover {
 .sometext {
   text-align: left;
   justify-self: center;
-  font-family: "Lato", sans-serif;
   font-size: 1.9rem;
-  color: #534d4d;
 }
 h5 {
   white-space: nowrap;
@@ -203,7 +212,6 @@ h5 {
 .pairProgrammingImg {
   max-width: 100%;
   max-height: 100%;
-
   justify-self: center;
 }
 .waveMe {
@@ -235,7 +243,10 @@ h5 {
   animation-fill-mode: forwards;
 }
 
+/* Hero section end */
+
 /* Service section start */
+
 .service {
   background-color: #f8f8f8;
   padding-bottom: 2rem;
@@ -259,14 +270,9 @@ h5 {
   margin-top: 2rem;
 }
 .serviceHeaderText h3 {
-  font-family: "Lato", sans-serif;
   font-size: 2rem;
-  color: #5a5454;
 }
-.serviceHeaderText p {
-  font-family: "Roboto", sans-serif;
-  color: #747474;
-}
+
 .serviceCards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -304,6 +310,9 @@ h5 {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
 }
+
+/* Service Cards */
+
 .paintServiceCard {
   background: rgb(66, 234, 212);
   background: linear-gradient(
@@ -352,6 +361,9 @@ h5 {
     rgba(255, 128, 182, 1) 100%
   );
 }
+
+/* THere is a better way to do this but i dont have time */
+
 .serviceCard img {
   height: 8rem;
   width: 8rem;
@@ -388,14 +400,7 @@ h5 {
   align-items: left;
   gap: 2rem;
 }
-.promotionText h4 {
-  color: #5a5454;
-  font-family: "Lato", sans-serif;
-}
-.promotionText p {
-  color: #747474;
-  font-family: "Roboto", sans-serif;
-}
+
 /* End of promotion section */
 
 /* portfolio start */
@@ -415,23 +420,16 @@ h5 {
   gap: 3rem;
 }
 .portfolioText h3 {
-  font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 2rem;
-  color: #5a5454;
 }
-.portfolioText p {
-  font-family: "Roboto", sans-serif;
-  color: #747474;
-}
+
 .portfolioText ul {
   display: flex;
   flex-direction: column;
   list-style-type: none;
   gap: 2rem;
-  font-family: "Roboto", sans-serif;
   padding: 0;
-  color: #969ca2;
 }
 
 .portfolioText ul li:hover {
@@ -470,15 +468,9 @@ h5 {
 }
 
 .ourSuccessText h3 {
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  color: #5a5454;
   font-size: 1.5rem;
 }
-.ourSuccessText p {
-  font-family: "Roboto", sans-serif;
-  color: #747474;
-}
+
 .ourSuccessGrid {
   display: flex;
   flex-wrap: wrap;
@@ -817,7 +809,6 @@ h5 {
   gap: 2rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 1rem;
-
   justify-content: space-between;
 }
 .blogCardText {
@@ -841,6 +832,8 @@ h5 {
 .ourBlogCompanies {
   display: flex;
   gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .blogCompaniesImgContainer img {
   width: 100%;
@@ -909,7 +902,9 @@ h5 {
 
 /* ABout me end */
 
-@media screen and (max-width: 1000px) {
+/* Media Queries */
+
+@media screen and (max-width: 1023px) {
   html {
     font-size: 12px;
   }
@@ -963,13 +958,13 @@ h5 {
     height: 4rem;
   }
 }
-@media screen and (max-height: 643px) {
-}
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 450px) {
   .navm {
     position: fixed;
     left: -100%;
     top: 5rem;
+    z-index: 2;
     flex-direction: column;
     font-size: 1.5rem;
     background-color: #f8f8f8;
@@ -1008,3 +1003,6 @@ h5 {
     flex-direction: column;
   }
 }
+
+/* Znam da je trebalo 3 media query-a ali ja mislim da nema potrebe da stavljam jos jedan jer sve radi kako treba
+jedino da izmislim neki bzvz query cisto onako da bi ih bila 3 */
