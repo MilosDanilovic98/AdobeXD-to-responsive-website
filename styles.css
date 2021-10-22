@@ -117,7 +117,7 @@ html {
   text-shadow: 0px 1px 0px #ff8a23;
 }
 .hero {
-  height: 100vh;
+  padding-top: 1rem;
 }
 
 .header {
@@ -178,6 +178,11 @@ h5 {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: auto;
 }
 .pairProgrammingImg {
   max-width: 100%;
@@ -862,11 +867,41 @@ h5 {
   align-items: center;
   justify-content: center;
 }
+
+/* About me start */
+
+.aboutMeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.aboutMeLeftImgContainer img {
+  border-radius: 2rem;
+  width: 100%;
+  height: auto;
+}
+.aboutMeRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  background-color: ;
+}
+
+/* ABout me end */
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 12px;
   }
 
+  .aboutMeContainer {
+    flex-direction: column;
+  }
   .ourBlogCards {
     flex-direction: column;
   }
@@ -891,7 +926,7 @@ h5 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 25rem;
     row-gap: 1rem;
-    margin: 10%;
+    padding: 1rem;
   }
   .waveMe {
     margin: auto;
@@ -914,9 +949,6 @@ h5 {
   }
 }
 @media screen and (max-height: 643px) {
-  .hero {
-    height: 100%;
-  }
 }
 @media screen and (max-width: 500px) {
   nav ul {
