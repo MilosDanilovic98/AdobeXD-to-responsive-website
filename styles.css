@@ -927,8 +927,8 @@ h5 {
 .formContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-around;
+
   margin-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -941,7 +941,7 @@ form {
   flex-direction: column;
   gap: 2rem;
   background-color: #f8f8f8;
-  padding: 3rem;
+  padding: 4rem;
   border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -949,8 +949,12 @@ form {
 form input {
   height: 3rem;
   width: 15rem;
+  border: none;
   border-radius: 2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+  outline: none;
+  background-color: #f7f0f5;
 }
 
 form textarea {
@@ -959,8 +963,11 @@ form textarea {
   border-radius: 2rem;
   padding: 1rem;
   text-align: center;
+  border: none;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: hidden;
+  outline: none;
+  background-color: #f7f0f5;
 }
 .formImgContainer {
   flex: 0 0 40%;
@@ -969,14 +976,22 @@ form textarea {
   width: 100%;
   height: auto;
 }
-
+.footerSocialLogosForm {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+  padding-top: 2rem;
+  gap: 1rem;
+}
 .form-group {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 /* Contact us End */
-
+iframe {
+  width: 100%;
+}
 /* Media Queries */
 
 @media screen and (max-width: 1023px) {
